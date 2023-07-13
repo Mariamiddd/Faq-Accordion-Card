@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    background: linear-gradient(180deg, #B068E9 0%, #6463E7 100%);
+    color: rgba(30, 31, 54, 1);
+    background-repeat: no-repeat;
+}
+.container p{
+    display: none;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 148px 24px 85px 24px;
+    padding: 132px 24px 48px 24px;
+    border-radius: 23px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.5);
+}
+.img-wrapper{
+    top: 19%;
+    align-self: center;
+    position: absolute;
+}
+.woman-img-desktop, .box, .bg-desktop{
+    display: none;
+}
+.woman-img{
+    width: 100%;
+    bottom: 100px;
+    position: relative;
+    z-index: 2;
+}
+.bg-img{
+    width: 100%;
+    position: relative;
+    bottom: 190px;
+}
+.container h1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+    font-weight: 700; 
+}
+.container h2{
+    position: relative;
+    z-index: 20;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(75, 76, 95, 1);
+    font-size: 13px;
+    font-weight: 400;
+}
+.container p{
+    margin-top: 13px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #787887;
+ 
+}
+.container hr{
+    background: rgba(232, 232, 234, 1);
+    height: 1px;
+    border: none; 
+    margin: 18px 0 19px 0; 
+}
+.question.active{
+    font-weight: 700;
+}
+.container h2:hover{
+    cursor: pointer;
+    color: #F47B56;
+    font-weight: 400;
+}
+.answer {
+    display: none;
+}
+.answer.active{
+    display: block;
+}
+.show {
+    display: block;
+  }
+
+@media only screen and (min-width: 1400px) {
+    body{
+        z-index: 100000;
+    }
+    .container{
+        overflow-x: hidden;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 65px 111px 83px 0;
+        margin: 129px 239px 130px 281px;
+    }
+    .container h1{
+        margin-right: auto;
+    }
+    .faq-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .woman-img-desktop{
+        display: flex;
+        position: absolute;
+        width: 471.6944580078125px;
+        bottom: -110px;
+        left: -90px;
+    }
+    .bg-desktop{
+        display: flex;
+        position: absolute;
+        width: 471.6944580078125px;
+        bottom: -140px;
+        left: -90px;
+    }
+
+    .box{
+        position: absolute;
+        right: 75%;
+        bottom: 30%;
+        display: block;
+        z-index: 100;
+    }
+    .bg-img, .woman-img{
+        display: none;
+    }
+    .img-wrapper{
+        position: relative;
+    }
+}
